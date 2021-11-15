@@ -338,7 +338,7 @@ def get_topleft_bottomright(polygon):
     bottom_right = bottom_right + (min_lat,right_long)
     return top_left, bottom_right
 
-def input_polygons(path, colour_list):
+def input_polygons(path, colour_list, target_file):
     data = pd.read_csv(path)
     data['Building_Count'] = 0
     data['polygon_json'] = data['polygon_json'].apply(json.loads)
@@ -350,5 +350,5 @@ def input_polygons(path, colour_list):
         area_image = gmaps_polygon_and_extractor(coordinates)
         df, empty_df, final_df, img_df, total_buildings = run_code(area_image, 'Yes', colour_list)
         data['Building_Count'][j] = total_buildings
-    data.to_csv('building_counts_frompy.csv')
+    data.to_csv(target_file)
     return data, empty_df, final_df, img_df
