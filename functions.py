@@ -314,15 +314,7 @@ def gmaps_polygon_and_extractor(polygon_coordinates = 0):
             f=urllib.request.urlopen(url)
             im=Image.open(BytesIO(f.read()))
             final.paste(im, (int(x*largura), int(y*altura)))
-#     plt.imshow(final)
-#     plt.show()
-    final.save('/Users/advait_t/Desktop/raw_maps.png')
     final = keep_interested_area(final)
-#     final = cv2.resize(final, (0,0), fx=0.5, fy=0.5) 
-#     print(final.shape)
-#     print('Done')
-#     plt.imshow(final)
-#     plt.show()
     return final
 
 def get_topleft_bottomright(polygon):
