@@ -1,8 +1,9 @@
 <snippet>
   <content><![CDATA[
-# ${1: Jio Building Counts}
-Project made to identify and count objects in a polygon without using high CPU/GPU usage techniques and algorithms and Deep Learning methods.
-Objectives:
+# Jio Building Counts
+
+## Description and Objectives
+TODO: Project made to identify and count objects in a polygon without using high CPU/GPU usage techniques and algorithms and Deep Learning methods.
 1. To identify potential methods to create an object detection model without the usage of GPU or have high compute requirements.
 2. To identify an accurate, up-to-date and easy-to-use map provider like Google Maps, Map My India and others.
 3. Use the current dataset with the given polygon coordinates to use as input for the object detection model.
