@@ -1,6 +1,3 @@
-.
-<snippet>
-  <content>
 # Jio Building Counts
 Project made to identify and count objects in a polygon without using high CPU/GPU usage techniques and algorithms and Deep Learning methods.
 
@@ -26,7 +23,3 @@ To run code "python running_code.py {path-to-cluster-file} {path-to-final-output
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-</content>
-  <tabTrigger></tabTrigger>
-</snippet>
